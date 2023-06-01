@@ -143,3 +143,105 @@ user@user-thinkpad-l15:~$
 ```
 
 <br />
+
+### **05. mkdir**
+
+The command **`mkdir`** allows you to create directories by typing it into your terminal followed by a name of you choice
+
+To create:
+
+- Single directory: **`mkdir myDirectory`**
+- Single directory that it's name contains two words separated by an empty space/s: **`mkdir my\ directory`** or **`mkdir "my directory"`**
+- Multiple directories: **`mkdir directory1 directory2 directory3 `**
+- Multiple directories that there names contains multiple words separated by empty space/s: **`mkdir my\ directory my\ other\ directory`** or **`mkdir "my directory" "my other directory"`**
+
+<br />
+
+### **06. rmdir**
+
+The command **`rmdir`** allows you to remove directories by typing it into your terminal followed by the name of the directory you want.
+
+<br />
+
+### **07. touch**
+
+The command **`touch`** is used to create files by typing it into the terminal followed by a name and suffix
+
+> **`touch`** follow the same rules of **`mkdir`** regarding creating single/multiple files with different naming conventions
+
+> We can also use **`touch`** to change and modify timestamps. [Read more](https://linuxize.com/post/linux-touch-command/)
+
+<br />
+
+### **08. nano**
+
+Nano text editor is pre-installed on macOS and most Linux distros. To check if it is installed on your system type:
+**`nano --version`**
+
+If it is not installed, you can install by typing **`sudo apt install nano`** in your terminal.
+
+##### Opening and Creating Files
+
+- To open an existing file, type `nano [file name]`
+- To create a new file and open it immediately, type `nano [file name]`
+
+> without the square brackets `[]`
+
+<br />
+
+### **09. less**
+
+**`less`** used to read the contents of a text file one page at a time.
+The **`less`** command doesn’t load the entire file, but loads it part by part which makes it faster.
+
+<br />
+
+### **10. cp**
+
+**`cp`** command is used for copying files and directories to another location. To copy a file, specify **`cp`** followed by the name of a file to copy. Then, state the location at which the new file should appear
+
+to copy:
+
+- file or directory to another directory: `cp [source file/dir name] [dest dir name]`
+- file content into another file: `cp [source file name] [dest file name]`
+- all contents of the current `cp -r !([source dir name]) [dest dir name]`
+- multiple Files or directories to another directory: `cp [source file/dir name] [other source file/dir name] [dest dir name]`
+
+<br />
+
+### **11. mv**
+
+**`mv`** command is used for move files and directories to another location. To move a file, specify **`mv`** followed by the name of a file/dir to move. Then, state the location at which the new file/dir should appear
+
+> same rules of **`cp`** applies on **`mv`** regarding moving single/multiple files or directories
+
+<br />
+
+### **12. rm**
+
+The **`rm`** commands used to remove files and directories. However, the removed files and directories do not get moved to the Trash. Instead, the rm command removes the files and directories permanently
+
+syntax:
+**`rm [option] [filename]`**
+
+In order to:
+
+- remove a file : **`rm [file name]`**
+- remove the intire content of a directory **`rm -r *`**
+- recursively delete a directory and all its contents: **`rm -r [directory name]`**
+- forcibly delete files without confirmation: **`rm -f [file name]`**
+- remove file after confirmation:
+  1. **rm -i** will ask for confirmation before deleting each file
+  2. **rm -I** will only ask once and only if you are trying to delete three or more files
+
+> be careful while using these commands as you will not be able to recover the removed files and directories unless you have a backup.
+
+<br />
+
+### External Resources
+
+- [Intro to terminal](https://github.com/DigitalCareerInstitute/BDL-teaching-materials/blob/master/materials/01-intro-terminal.md)
+- [The Linux command line for beginners](https://ubuntu.com/tutorials/command-line-for-beginners#1-overview)
+- [Linux Command-line Cheatsheet](https://cheatography.com/davechild/cheat-sheets/linux-command-line/)
+- [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
+- [Terminus Game](https://web.mit.edu/mprat/Public/web/Terminus/Web/main.html)
