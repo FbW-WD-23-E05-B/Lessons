@@ -53,3 +53,6 @@
 
 - `npm install package name`|| `npm i package name`
 - `npm uninstall package name `
+- `nvm` is a tool for changing nodjs veresions esily and fast
+- `nvm install --lts` => it installs the most stable of node version so far
+- `nvm use version-node  ` => for example  ` nvm install 19` =>  `nvm use 19`
