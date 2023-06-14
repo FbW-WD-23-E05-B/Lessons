@@ -65,3 +65,8 @@ Forcibly removes all files and folders inside a directory/ or just a file.
 ---
 
 ## General (extra)
+
+### Workflow
+
+- we should keep the main clean, make branches and then try to merge those branches with github into the main
+- this is a workflow
