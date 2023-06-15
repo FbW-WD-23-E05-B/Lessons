@@ -61,6 +61,32 @@ Forcibly removes all files and folders inside a directory/ or just a file.
 - then you will commit to the repo
 - Both add and commit at the same time 'commit -am ""`
 - Difference: git add (staging the file/files that have changes or that you want to stage), git commit (committing your work, saving a timestamp/mark in your git history)
+- _good commit message_: descriptive, to the point and short
+
+### What is a branch?
+
+- parallel branch (to the main)
+- copy of the main, work on this new copy/moving ahead, then we add the copy to main and make a new version of main
+- branches of tree -> make changes without disturbing others work, then move it into main
+- Take a copy (isolate it), allowing more people to work on the same project
+- branch -> a pointer to a snapshot (commit) of your changes
+
+### What does the command git branch do without any options/arguments?
+
+List branches that you have locally (show which branch your on)
+
+### Two ways to create a branch and move onto it in one command:
+
+git switch -c [nameofbranch]
+git checkout -b [nameofbranch]
+
+### What is the difference between local and remote repositories?
+
+    Local repo:
+
+- your the only person who has the repo / the repo resides on your computer
+  Remote repo:
+- The repo reside online/hosted (github), all team members have access to it
 
 ---
 
