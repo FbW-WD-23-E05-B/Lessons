@@ -1,0 +1,56 @@
+html {
+    scroll-behavior: smooth;
+}
+
+h1{
+
+
+    color:dodgerblue ;
+}
+
+.dogs {
+
+    background-color: rgb(142, 40, 172,0.1);
+}
+
+.cats{
+    color: #0aeaff
+
+}
+
+a {
+    text-decoration: none;
+    color: #84ae82;
+}
+
+
+#dino:hover{
+
+background-color: rgb(110, 72, 199);
+font-size: larger;
+list-style-type: none;
+}
+
+
+
+
+a:active {
+
+font-size: 50px;
+background-color: rgb(78, 36, 36);
+
+}
+
+
+a:visited{
+
+color: red;
+
+}
+
+.jay-h1:hover{
+
+text-align: center;
+font-size: 16px;
+color: darksalmon;
+}
