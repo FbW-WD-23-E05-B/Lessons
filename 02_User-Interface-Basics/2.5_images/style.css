@@ -1,0 +1,39 @@
+h1 {
+  color: rgb(91, 92, 54);
+}
+
+#image-1 {
+  float: left;
+  height: 300px;
+  width: 300px;
+  border: 2px solid rgb(151, 155, 56);
+  border-radius: 50%;
+  opacity: 0.5;
+  margin: 10px;
+}
+
+/* clear fix for clearing floats */
+/* now we have gone past floats for layouts and we will be using *flex* and *grid*! */
+
+#image-1:hover {
+  opacity: 1;
+}
+
+.img {
+  width: 200px;
+  height: 200px;
+
+  border: 2px solid black;
+
+  /* * The replaced content is sized to fill the element's content box. This is the initial value */
+  /* object-fit: fill; */
+
+  /* * The replaced content is scaled to maintain its aspect ratio while fitting within the element's content box. */
+  /* object-fit: contain; */
+
+  /* * The replaced content is sized to maintain its aspect ratio while filling the element's entire content box. */
+  /* object-fit: cover; */
+
+  /* * The replaced content is not resized. */
+  object-fit: none;
+}
