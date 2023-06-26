@@ -1,0 +1,81 @@
+
+
+/* button{
+    font-size: 50px;
+}
+
+
+
+h1{
+    color:cyan
+}
+
+h1{
+    color: red;
+} */
+
+
+/* 0,0,0,1 */
+/* p{
+    color: darkmagenta 
+} */
+
+/* 0,1,0,0 */
+#pargraph-1{
+    color: blue;
+}
+
+/* 0,0,1,1 */
+p.cats{
+    color: red;
+}
+
+/* 0,1,0,1 */
+
+p#pargraph-1{
+    color: coral;
+}
+
+/* 0,0,1,0 */
+.cats{
+    color: green;
+}
+
+
+
+
+.parent{
+    color: red;
+    font-size: 20px;
+    border: 2px solid  black;
+  
+  
+}
+
+.child{
+     /* color:inherit; */
+     font-size: unset;
+     border:inherit;
+    
+}
+/* 0,0,1,1 */
+div.test{
+
+    background-color: green;
+
+}
+/* 0,1,0, 1*/
+div#test{
+background-color: blue;
+}
+
+/* 0,0,1,0 */
+.test{
+
+width: 200px;
+height: 200px;
+background-color: gray;
+
+}
+
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css specificty </title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+ 
+<h1>lets see how specificty works</h1>
+<!-- 1,0,0,0 -->
+<p  style="color:pink"  class="cats" id="pargraph-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, ducimus repellat sint sed a cum tempora ullam, aliquam quo quis sapiente debitis perspiciatis dolore ut eligendi animi distinctio incidunt eum!</p>
+
+<div>
+
+    <div>
+        <p  class="cats" >this is a paragraph very deep inside of 2 ivs</p>
+    </div>
+</div>
+
+<hr>
+
+<div class="parent">
+  
+    <h3>this is h3</h3>
+
+    <p class="child">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptates sunt quasi illo incidunt aperiam tenetur, alias numquam, modi corporis autem velit repellat hic similique nesciunt doloremque iure rem est.</p>
+
+
+</div>
+
+
+
+<div class="test" id="test">
+        
+</div>
+<hr>
+<section class="test" >
+
+</section>
+</body>
+</html>
