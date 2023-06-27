@@ -1,0 +1,37 @@
+
+#container{
+    width: 80%;
+    border: 2px solid gray;
+    margin: auto;
+}
+
+
+h1{
+    margin-bottom: 100px;
+    text-align: center;
+    background-color: pink;
+}
+p{
+text-align: center;
+background-color: aqua;
+}
+
+span{
+    text-align: center;
+    display: block;
+    background-color: greenyellow;
+}
+
+img{
+   display: block;
+   margin: auto;
+}
+
+
+article{
+
+    width: 40%;
+    height: 200px;
+    border: 2px solid red;
+    overflow:  auto;
+}
