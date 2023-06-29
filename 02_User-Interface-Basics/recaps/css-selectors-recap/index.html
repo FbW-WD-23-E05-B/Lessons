@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CSS Selectors</title>
+  </head>
+  <body>
+    <!-- What is a css selector -> the name that i type before giving a style: the target for my css styles -->
+
+    <section class="one">
+      Ex One - Elements, classes and ID's
+      <div>Element</div>
+      <div class="class">class</div>
+      <div id="id">id</div>
+    </section>
+
+    <section class="two">
+      Example Two - Child Combinator
+
+      <div class="parent">
+        <p>This is a p</p>
+        <p>Yes</p>
+
+        <div>
+          <p>This is a p tag inside a div</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="three">
+      Example Three - General siblings
+
+      <!-- p*5>lorem10 - shortcut (emmet) -->
+      <p>
+        p1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
+        dolorum?
+      </p>
+      <p class="target">
+        p2 Soluta, corporis non aliquam pariatur eligendi dolores placeat quod
+        fuga.
+      </p>
+      <h3>Some Heading</h3>
+      <h3>It also targets this</h3>
+
+      <p>
+        p3 Dolor quia sapiente fugit culpa possimus aspernatur est obcaecati
+        quas.
+      </p>
+      <p>
+        p4 Facilis alias ipsam reprehenderit, quae labore beatae quam dolor
+        minus.
+      </p>
+    </section>
+
+    <section class="four">
+      Example Four - Pseudo Selectors
+
+      <p>Lorem ipsum dolor sit amet.</p>
+      <h3>I am a heading between p1 and p2</h3>
+      <p>Hic corrupti libero doloribus autem.</p>
+      <p>Nostrum tempore incidunt placeat ea.</p>
+      <p>Porro aut dignissimos nihil corporis.</p>
+      <p>Sunt necessitatibus possimus rem exercitationem!</p>
+      <p>Sunt necessitatibus possimus rem exercitationem!</p>
+
+      <p>Sunt necessitatibus possimus rem exercitationem!</p>
+      <p>Sunt necessitatibus possimus rem exercitationem!</p>
+    </section>
+  </body>
+</html>

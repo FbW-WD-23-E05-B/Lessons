@@ -1,0 +1,66 @@
+/* css reset -> very soft */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222;
+  color: hsl(0, 0%, 99%);
+}
+
+h1 {
+  margin: 15px 10px;
+}
+
+div {
+  color: red;
+  background-color: aliceblue;
+  margin: 10px;
+  border: 10px solid red;
+  padding: 10px;
+  width: 200px;
+}
+
+div:nth-of-type(1) {
+  box-sizing: content-box;
+}
+
+div:nth-of-type(2) {
+  box-sizing: border-box;
+}
+
+/* -------------------------------- */
+/* Displays */
+
+/* what is the difference inline, inline-block, block */
+/* inline -> allows other element to be beside and doesnt take up whole width, doesnt take width and height (speical replaced inline element like img do) */
+/* padding works but doesnt push content up and down */
+/* margin only work on the side (vertical margin does not apply */
+
+span {
+  width: 100px;
+  height: 100px;
+  color: rgb(108, 108, 202);
+  padding: 15px;
+  margin: 15px;
+  display: inline;
+  background-color: lightcoral;
+}
+
+span:hover {
+  color: red;
+}
+
+/* inline-block -> inline with other element, but is allowed height and widht and all margins  */
+
+/* span:nth-of-type(2) {
+  display: inline-block;
+} */
+
+span:nth-of-type(2) {
+  display: block;
+}
+
+/* block -> take all the width (nothing beside) */

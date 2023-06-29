@@ -1,0 +1,84 @@
+section {
+  border: 1px solid red;
+  margin-block: 20px;
+
+  background-color: aliceblue;
+}
+
+/* ! elements classes and ids */
+
+/* targeting an element by writing element name, ie div */
+/* target a parent, then add a space and target only elements relating to the parent -> Descendant combinator */
+.one div {
+  height: 20px;
+  background-color: green;
+}
+
+/* specificity */
+.one .class {
+  background-color: burlywood;
+}
+
+#id {
+  background-color: red;
+}
+
+/* ! > = Child Combinator */
+
+/* .parent p {
+  color: #123afc;
+} */
+
+/* tagretting direct children */
+.parent > p {
+  color: red;
+}
+
+/* ! ~ = General Siblings */
+
+.three .target ~ h3,
+.three .target ~ p {
+  color: orchid;
+}
+
+/* 
+h3,
+p {
+  color: red;
+}
+
+p {
+  font-style: italic;
+} */
+
+/* ! : = pseudo Selectors */
+
+.four p {
+  font-style: italic;
+  color: rgb(4, 51, 35);
+}
+
+.four p:nth-child(2) {
+  font-size: 20px;
+  color: red;
+}
+
+.four p:nth-child(even) {
+  color: green;
+  text-decoration: underline;
+}
+
+.four p:last-child {
+  color: blueviolet;
+  font-size: 30px;
+}
+
+.four p:nth-of-type(2) {
+  color: brown;
+  text-decoration: line-through;
+}
+
+/* .four p:nth-child(2) {
+  color: red;
+  text-decoration: line-through;
+} */
