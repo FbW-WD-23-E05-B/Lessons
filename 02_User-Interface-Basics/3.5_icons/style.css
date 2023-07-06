@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 1.6rem;
+}
+
+h1 {
+  background-color: rgb(244, 161, 152);
+  padding: 1em;
+  color: rgb(28, 26, 26);
+  text-align: center;
+}
+
+.icons {
+  width: 300px;
+  margin: 10px auto;
+}
+
+.icons i {
+  display: block;
+  text-align: center;
+  font-size: 50px;
+}
+
+.icons i:nth-child(2) {
+  font-size: 20px;
+  /*  margin block gives margin to the top and bottom of an element */
+  margin-block: 20px;
+}
+
+.icons i:nth-child(3) {
+  font-size: 100px;
+}
+
+.fa-cat:hover {
+  color: limegreen;
+  cursor: pointer;
+}
+
+/* Alert stylings */
+
+/* 
+* put it in the center 
+* give the whole things a border
+* change the click to respond background color
+*/
+
+.alert {
+  font-family: "Courier New", Courier, monospace;
+  /* white-space: nowrap; */
+  text-align: center;
+
+  margin: 0 auto;
+  width: 300px;
+  border: 5px solid rgb(18, 69, 18);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 6px 6px 6px rgb(27, 103, 27);
+}
+
+.alert-info {
+  padding: 1.5em;
+}
+
+.fa-envelope {
+  font-size: 2em;
+  color: rgb(18, 69, 18);
+}
+
+.alert-btn {
+  border-top: 2px solid rgb(18, 69, 18);
+  padding: 1em;
+
+  color: rgba(240, 248, 255, 0.789);
+  text-shadow: 2px 0px 8px black;
+
+  background: url(./images/bekky-bekks-wFgEAQck6mw-unsplash.jpg);
+  background-position: top;
+}
+
+.alert-btn:hover {
+  color: aliceblue;
+  cursor: pointer;
+}
+
+/* hero banner */
+
+.hero {
+  margin: 20px auto;
+  height: 506px;
+  max-width: 850px;
+  position: relative;
+
+  background-image: url(./images/bekky-bekks-wFgEAQck6mw-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-size: 48px;
+  white-space: nowrap;
+
+  color: #eee;
+  text-shadow: 0 0 15px #201919;
+}
