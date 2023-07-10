@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.top-part-parent ul {
+  display: inline;
+  margin: 0 7rem;
+}
+.top-part-parent {
+  background-color: rgba(46, 138, 207, 1);
+  color: #eee;
+  font-size: smaller;
+  position: relative;
+}
+
+ul li {
+  display: inline;
+  margin-right: 1rem;
+}
+
+div ul:nth-of-type(2) {
+  text-align: right;
+
+  position: absolute;
+  right: 0;
+}
+
+nav {
+  background-color: #eee;
+  padding: 1.2rem;
+}
+nav > ul {
+  margin: 0 7rem;
+  text-align: center;
+}
+
+nav ul li > i {
+  color: rgba(46, 138, 207, 1);
+}
+
+nav button {
+  background-color: rgba(46, 138, 207, 1);
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  color: white;
+  border: none;
+  margin-left: 2rem;
+}
+
+nav ul :first-child {
+  font-size: 2rem;
+  margin-right: 2rem;
+}
+
+nav ul li {
+  font-size: 13px;
+}
+
+.hero {
+  background-image: url("https://wallpaperaccess.com/full/424833.jpg");
+  height: 80vh;
+  background-position: bottom;
+  background-size: cover;
+  position: relative;
+}
+
+.hero > .offer {
+  background-color: rgb(17, 111, 198, 0.4);
+
+  height: 70%;
+  width: 35%;
+  position: absolute;
+  right: 50px;
+  bottom: 10px;
+  border-radius: 50%;
+}
+
+.offer > div:nth-of-type(2) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #eee;
+}
+
+.offer > div > h1 {
+  font-size: 50px;
+}
+
+.offer > div > button {
+  padding: 0.5rem 3rem;
+  background-color: transparent;
+  border: solid #eee 2px;
+  border-radius: 20px;
+  margin-top: 1rem;
+}
+
+.offer > .date {
+  width: 25%;
+  height: 25%;
+  background-color: #eee;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+}
+
+.offer > .date > p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 10px;
+}
