@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Everyday Gym</title>
+  </head>
+  <body>
+    <!-- * sign up a user for our gym -->
+    <!-- 
+        the users need to enter their:
+        - name,
+        - email,
+        - password 
+    -->
+    <!-- 
+        The user also need to enter:
+        - date they would like to start,
+        - a rough number of times they will go a week between 1 and 5,
+        - what they would like to do (lets list some option for them for example swimming, running, weight training... so on) 
+    -->
+
+    <!-- Solution
+    write new membership (title/heading)
+    from
+    field set include:
+       name, email and password -> submit
+    fieldset include:
+        label date to date (for starting)
+        label for choice (times per week: range 1-5)
+        label for activity choice (checkbox including different options / select)
+     -->
+
+    <header><h1>Welcome to the everyday gym!</h1></header>
+
+    <main>
+      <h2>Please fill out the following options:</h2>
+
+      <form action="#">
+        <fieldset>
+          <legend>Personal Info</legend>
+          <label>Name: <input type="text" /></label>
+          <br />
+          <label>Age: <input type="number" /></label>
+          <br />
+          <label>Email: <input type="email" /></label>
+        </fieldset>
+        <fieldset>
+          <legend>Gym Details</legend>
+          <label>Choose your starting date: <input type="date" /> </label>
+          <hr />
+          <label
+            >How often do you think you'll go:
+            <input type="range" min="1" max="5" value="3" />
+          </label>
+          <hr />
+          <p>Choose some of the following sports you are into</p>
+          <label>Swimming: <input type="checkbox" name="sport" /></label>
+          <label>Running: <input type="checkbox" name="sport" /></label>
+          <label>Weight training: <input type="checkbox" name="sport" /></label>
+          <label>Boxing: <input type="checkbox" name="sport" /></label>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
