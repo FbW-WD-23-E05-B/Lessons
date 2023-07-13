@@ -1,0 +1,18 @@
+body {
+  background-color: aquamarine;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+  border: 1px solid black;
+}
+
+.box-1 {
+  background-color: blue;
+}
+
+.box-3 {
+  height: 100px;
+}

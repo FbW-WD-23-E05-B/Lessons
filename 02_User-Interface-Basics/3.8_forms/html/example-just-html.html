@@ -3,8 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/reset.css" />
-    <link rel="stylesheet" href="./styles/main.css" />
     <title>Basic Forms</title>
   </head>
   <body>
@@ -13,19 +11,26 @@
     </header>
 
     <main>
-      <!-- ! Inputs -->
       <section>
-        <h2>Inputs</h2>
+        <!-- action attribute: specifies the URL where the form data should be sent when the user submits the form.  -->
+        <!-- methods GET and POST: get is to retrieve and post is to create -->
         <form
           method="GET"
           action="https://rickandmortyapi.com/api/character/226"
           target="_blank"
-          id="inputs"
         >
+          <!-- Input tag -->
+
           <input type="text" name="username" placeholder="Username" />
+          <!-- type attribute: specifies the type of data that can be entered or selected by the user.   -->
+          <br />
+          <!-- name attribute: identifies the name of the input field when the form is submitted. -->
           <input type="number" name="age" id="" placeholder="Age" />
-          <input type="email" name="email" id="" placeholder="Email" />
-          <input type="password" name="password" id="" placeholder="Password" />
+          <!-- -> age = 4 -->
+          <br />
+          <input type="email" name="email" id="" />
+          <br />
+          <input type="password" name="password" id="" />
 
           <button type="submit">Submit</button>
         </form>
@@ -33,17 +38,23 @@
 
       <!-- ! Numbers -->
       <section>
-        <h2>Numbers</h2>
         <form action="#">
+          <h2>Numbers</h2>
+
+          <!--  for attribute: it associates the label with a specific form element using the id attribute of that element, this is great for accessibility and click-ability (UX)  -->
           <label for="userage">Type your age:</label>
           <input
             type="number"
-            name="userage"
+            name="age"
             id="userage"
             placeholder="Enter your age"
             min="18"
             max="105"
           />
+
+          <br />
+
+          <!-- association between a <label> and an <input> (or other form elements) can also be achieved by nesting the form element inside the <label> element without explicitly using the for attribute -->
           <label
             >Give me your feedback
             <input type="range" min="1" max="10" step="1" value="7" />
@@ -67,11 +78,13 @@
         </form>
       </section>
 
-      <!-- ! Checkboxes-->
+      <!-- ! Checkboxes and radio buttons -->
+      <!-- Checkboxes and radio buttons are input elements commonly used in HTML forms to allow users to make selections from a predefined set of options -->
       <section>
         <h2>Checkboxes</h2>
-
+        <!-- Checkboxes are used when users can select multiple options from a group of choices. -->
         <form action="#">
+          <!-- the name value will associate them as a group if they have the same name value. -->
           <label for="javascript">Javascript</label>
           <input type="checkbox" id="javascript" name="option" />
           <label for="html">HTML</label>
@@ -81,11 +94,11 @@
         </form>
       </section>
 
-      <!-- ! Radio Buttons -->
       <section>
         <h2>Radio Buttons</h2>
-
+        <!-- Radio buttons are used when users can select a single option from a group of choices. -->
         <form action="#">
+          <!-- name attribute works the same as checkboxes  -->
           <label>
             Married
             <input type="radio" name="status" id="married" />
@@ -102,9 +115,11 @@
       </section>
 
       <!-- ! Select -->
+      <!-- select is used to create a dropdown menu or selection list, allowing users to choose one or multiple options from a predefined set of values -->
       <section>
-        <h2>Select</h2>
         <form action="#">
+          <h2>Select</h2>
+
           <label for="country">Select your country:</label>
           <select name="country" id="country">
             <option value="ger">Germany</option>
@@ -119,28 +134,34 @@
       <section>
         <h2>Other types of inputs</h2>
 
-        <form action="#" id="others">
-          <label for="color">Color Picker</label>
+        <form action="#">
+          <label for="color">Color Picker:</label>
           <input type="color" name="color" id="color" />
-
+          <hr />
           <label for="date">Date</label>
           <input type="date" name="date" id="date" />
-
+          <hr />
           <label for="files">Files</label>
           <input type="file" name="file" id="file" />
-
+          <hr />
           <label for="reset">Reset</label>
           <input type="reset" value="Reset" name="reset" id="reset" />
-
+          <hr />
           <label for="time">Time</label>
           <input type="time" name="time" id="time" />
+          <hr />
 
+          <!-- button vs input (type submit) -->
+
+          <!-- Button allows accessibility, better semantic meaning and easier to style (type="submit" is the default)  -->
           <button type="submit">Submit</button>
+          <!-- Input is okay but is less accessible -->
+          <input type="submit" value="Submit" />
         </form>
       </section>
 
       <!-- ! Fieldset & Legends -->
-
+      <!-- are used to group related form controls together and provide a visual and semantic structure to the form -->
       <section>
         <h2>Fieldsets & Legends</h2>
         <form action="#">
@@ -150,12 +171,12 @@
               Enter your name:
               <input type="text" />
             </label>
+            <br />
             <label>
               Enter your age:
               <input type="number" />
             </label>
           </fieldset>
-
           <fieldset>
             <legend>Skills</legend>
             <label>
@@ -173,6 +194,8 @@
           </fieldset>
         </form>
       </section>
+
+      <br /><br /><br />
     </main>
   </body>
 </html>

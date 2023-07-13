@@ -1,0 +1,52 @@
+/* css reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #030303;
+  background-color: rgb(238, 244, 249);
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+/* Generic styling */
+button {
+  display: block;
+  margin: 1.5rem 0 1.5rem auto;
+  padding: 0.5em 1.2em;
+  letter-spacing: 0.1em;
+  border-radius: 4px;
+  border: none;
+
+  background: linear-gradient(to right, #1181e2, #0a167b);
+  color: #fefefe;
+  text-shadow: 0 0 5px rgba(245, 245, 245, 0.3);
+}
+
+button:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+button:active {
+  box-shadow: inset rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+input:focus {
+  outline: none;
+}
